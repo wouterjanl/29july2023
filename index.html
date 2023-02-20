@@ -1,0 +1,157 @@
+<html lang="eng">
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#F5F1F1">
+    <meta name="msapplication-TileColor" content="#F5F1F1">
+
+    <!-- Preload the two initial images -->
+    <link rel="preload" href="assets/images/polaroid.jpeg" as="image">
+
+    <meta content="Filippa · Wouter-Jan" itemprop="name">
+    <meta content="Celebrate with us!" name="description">
+
+    <!-- Favicons Icons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+
+    <!-- Page Title -->
+    <title>Filippa & Wouter-Jan</title>
+
+    <!-- Styles -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script type="text/javascript">
+
+        function setLang(langVar) {
+            const enDivs = document.getElementsByClassName("lang-en");
+            const nlDivs = document.getElementsByClassName("lang-nl");
+            const noDivs = document.getElementsByClassName("lang-no");
+            let divsToHide = []
+            let divsToShow = []
+            if (langVar === "nl") {
+                divsToHide = [...enDivs, ...noDivs]
+                divsToShow = [...nlDivs]
+            } else if (langVar === "no") {
+                divsToHide = [...enDivs, ...nlDivs]
+                divsToShow = [...noDivs]
+
+            } else {
+                divsToHide = [...noDivs, ...nlDivs]
+                divsToShow = [...enDivs]
+            }
+            for (var i = 0; i < divsToHide.length; i++) {
+                divsToHide[i].style.display = "none";
+            }
+            for (var i = 0; i < divsToShow.length; i++) {
+                divsToShow[i].style.display = "block";
+            }
+            return false;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setLang('en');
+            });
+
+    </script>
+</head>
+
+<body>
+    <section class="opening">
+        <div class="opening-title">
+            <div class="opening-name">Filippa</div>
+            <div class="opening-and">&</div>
+            <div class="opening-name">Wouter-Jan</div>
+        </div>
+    </section>
+
+    <figure class="date">
+        29 · 07 · 2023
+    </figure>
+
+    <div class="text location">
+        <p class="text-big">Ørje Brygge, Ørje, Norway</p>
+    </div>
+
+    <figure>
+        <img class="small-flower-illustration" src="assets/images/small_flower_0.png">
+    </figure>
+    <div class="lang-choices">
+        <span><a href="javascript:setLang('nl');">Nederlands</a></span><span> | </span><span><a
+                href="javascript:setLang('no');">Norsk</a></span><span> | </span><span><a
+                href="javascript:setLang('en');">English</a></span>
+    </div>
+    <div class="text lower">
+        <div class="lang-en">
+            <p>Dear Family and Friends,</p>
+            <p>It is with insurmountable joy that we invite you to our wedding this summer!</p>
+            <p>Almost 10 years ago we walked into each other at a breakfast table in Moldova.
+                Life together has been an incredibly exciting, ever-enticing ride ever since.
+            <p>It became time to celebrate this with everyone who is dear to us!</p>
+            <p>For this we invite you to a boat-party in Ørje, the beautiful place where Filippa grew up.
+            </p>
+            <p>We know that for many of you Ørje may not be around the corner.
+                This is why we listed some practical information about how to get there and where to stay further below.</p>
+            <p>Please let us know by 15 March if you can make it or not.</p>
+            <p>We hope to see you in Ørje this summer!</p>
+            <p>With all the love of the world,</p>
+            <p>F & W xx</p>
+        </div>
+        <div class="lang-nl">
+            <p>Lieve familie en vrienden,</p>
+            <p>Het is met enorm veel vreugde dat we jullie uitnodigen voor ons trouwfeest!</p>
+            <p>F & W xx</p>
+        </div>
+        <div class="lang-no">
+            <p>Halloen,</p>
+            <p>Her kommer teksten på Norsk!</p>
+            <p>F & W xx</p>
+        </div>
+        <figure>
+            <img class="polaroid-illustration" src="assets/images/polaroid.jpeg">
+        </figure>
+    </div>
+
+    <div class="text card">
+            <figure>
+                <img class="small-boat-illustration" src="assets/images/steamboat.png">
+            </figure>
+        <p class="italic">Preliminary Program</p>
+        <div class="program-block">
+
+            <p class="bold">Friday 28 July 2023</p>
+            <p>19:00</p>
+            <p>Welcome barbeque</p>
+        </div>
+        <div class="program-block">
+        
+            <p class="bold">Saturday 29 July 2023</p>
+            <p>15:00</p>
+            <p>Wedding</p>
+        </div>
+        <div class="program-block">
+
+            <p class="bold">Sunday 30 July 2023</p>
+            <p>11:00</p>
+            <p>Goodbye Brunch</p>
+        
+        </div>
+        <figure>
+            <img class="small-flower-illustration" src="assets/images/small_flower_1.png">
+        </figure>
+    </div>
+    <div class="text margin-bottom">
+        <p class="bold">Practical Information</p>
+        <div class="text lower">
+            <p>How to get there?</p>
+            <p>By car, flight, train or boat.</p>
+            <p>Where to stay</p>
+            <p>Scandic in Mysen, we will provide for transport</p>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
