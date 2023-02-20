@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="eng">
 <head>
 
@@ -35,7 +36,6 @@
             } else if (langVar === "no") {
                 divsToHide = [...enDivs, ...nlDivs]
                 divsToShow = [...noDivs]
-
             } else {
                 divsToHide = [...noDivs, ...nlDivs]
                 divsToShow = [...enDivs]
@@ -46,11 +46,13 @@
             for (var i = 0; i < divsToShow.length; i++) {
                 divsToShow[i].style.display = "block";
             }
+            localStorage.setItem("lang", langVar)
             return false;
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            setLang('en');
+            const initLang = localStorage.getItem("lang");
+            setLang(initLang ?? "en");
             });
 
     </script>
@@ -64,17 +66,19 @@
             <div class="opening-name">Wouter-Jan</div>
         </div>
     </section>
+    
+    <div class="card">
+        <figure class="date">
+            29 · 07 · 2023
+        </figure>
 
-    <figure class="date">
-        29 · 07 · 2023
-    </figure>
-
-    <div class="text location">
-        <p class="text-big">Ørje Brygge, Ørje, Norway</p>
+        <div class="text location">
+            <p class="text-big">Ørje Brygge, Ørje, Norway</p>
+        </div>
     </div>
 
     <figure>
-        <img class="small-flower-illustration" src="assets/images/small_flower_0.png">
+        <img class="small-flower-illustration space-above" src="assets/images/small_flower_0.png">
     </figure>
     <div class="lang-choices">
         <span><a href="javascript:setLang('nl');">Nederlands</a></span><span> | </span><span><a
@@ -97,8 +101,17 @@
             <p>F & W xx</p>
         </div>
         <div class="lang-nl">
-            <p>Lieve familie en vrienden,</p>
-            <p>Het is met enorm veel vreugde dat we jullie uitnodigen voor ons trouwfeest!</p>
+            <p>Lieve Familie en Vrienden,</p>
+            <p>We zijn immens blij om jullie deze zomer uit te nodigen op ons trouwfeest in Noorwegen!</p>
+            <p>Tien jaar geleden ontmoetten we elkaar bij een ontbijttafel in Moldavië. Sindsdien hebben we samen een schitterende tijd
+            beleefd. En dat was nog maar het begin.</p>
+            <p>Het werd hoog tijd om dit met jullie te vieren!</p>
+            <p>Het mooie Ørje, waar Filippa opgroeide, wordt het decor. Het enige wat ontbreekt zijn jullie.</p>
+            <p>We begrijpen dat Ørje voor velen niet om de hoek ligt. Daarom vinden jullie praktische informatie over hoe je in Ørje
+            geraakt en waar je kan verblijven.</p>
+            <p>Om zo snel mogelijk een idee te hebben wie kan komen, zou het fijn zijn als jullie voor 15 maart kunnen laten weten of
+            jullie erbij zijn. Bezorg ons meteen ook een postadres, dan kunnen we een uitnodiging opsturen.</p>
+            <p>Hopelijk tot deze zomer!</p>
             <p>F & W xx</p>
         </div>
         <div class="lang-no">
@@ -111,33 +124,36 @@
         </figure>
     </div>
 
-    <div class="text card">
+    <div class="card">
+        <div class="text">
+                <figure>
+                    <img class="small-boat-illustration" src="assets/images/steamboat.png">
+                </figure>
+            <p class="italic text program-title">Preliminary Program</p>
+            <p class="text program-subtitle">(more details to come)</p>
+            <div class="program-block">
+
+                <p class="bold program-day">Friday 28 July 2023</p>
+                <p class="text program-time">evening</p>
+                <p>Welcome barbeque</p>
+            </div>
+            <div class="program-block">
+            
+                <p class="bold program-day">Saturday 29 July 2023</p>
+                <p class="text program-time">afternoon - evening - night</p>
+                <p>Wedding</p>
+            </div>
+            <div class="program-block">
+
+                <p class="bold program-day">Sunday 30 July 2023</p>
+                <p class="text program-time">morning</p>
+                <p>Goodbye Brunch</p>
+            
+            </div>
             <figure>
-                <img class="small-boat-illustration" src="assets/images/steamboat.png">
+                <img class="small-flower-illustration" src="assets/images/small_flower_1.png">
             </figure>
-        <p class="italic">Preliminary Program</p>
-        <div class="program-block">
-
-            <p class="bold">Friday 28 July 2023</p>
-            <p class="text program-time">evening</p>
-            <p>Welcome barbeque</p>
         </div>
-        <div class="program-block">
-        
-            <p class="bold">Saturday 29 July 2023</p>
-            <p class="text program-time">afternoon - evening - night</p>
-            <p>Wedding</p>
-        </div>
-        <div class="program-block">
-
-            <p class="bold">Sunday 30 July 2023</p>
-            <p class="text program-time">morning</p>
-            <p>Goodbye Brunch</p>
-        
-        </div>
-        <figure>
-            <img class="small-flower-illustration" src="assets/images/small_flower_1.png">
-        </figure>
     </div>
     <div class="text margin-bottom">
         <p class="bold">Practical Information</p>

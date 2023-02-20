@@ -25,7 +25,7 @@
 }
 
 :root {
-    --c-bg: hsl(1, 20%, 96%);
+    --c-bg: hsl(20, 20%, 96%);
     --c-text: hsl(0, 15%, 45%);
     --font-family: "Campton", sans-serif;
     --font-serif: "Didot LT", Didot, serif;
@@ -179,7 +179,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding: 0 1rem
 }
 
@@ -240,21 +240,21 @@ figure {
 }
 
 .small-boat-illustration {
-    height: 15%;
+    width: 40%;
     left: 0;
     right: 0;
     margin: 0 auto
 }
 
 .small-flower-illustration {
-    height: 25%;
+    width: 30%;
     left: 0;
     right: 0;
     margin: 0 auto
 }
 
 .polaroid-illustration {
-    height: 25%;
+    width: 30%;
     left: 0;
     right: 0;
     margin: 0 auto
@@ -274,8 +274,12 @@ figure {
     }
 }
 
-.text p:not(:last-child) {
+.text p {
     margin-bottom: 1rem
+}
+
+p.program-day {
+    margin-bottom: 0;
 }
 
 .opening+.text {
@@ -382,4 +386,19 @@ figure {
 
 .bottom-text {
     margin-bottom: 4rem;
+}
+
+.space-above {
+    margin-top: 2rem;
+}
+
+.text.program-subtitle {
+    text-transform: none;
+    margin: 0 0 2rem 0;
+    font-size: 0.5rem;
+}
+
+.text.program-title {
+    margin: 0 0;
+    font-size: 0.7rem;
 }
