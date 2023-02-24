@@ -197,7 +197,14 @@ body {
     text-transform: none;
     font-style: italic;
     margin: 0 0;
+} 
+.text.program-location{
+    text-transform: none;
+    font-style: none;
+    margin: 0 0;
 }
+
+
 
 .location {
     margin-top: 0.5rem;
