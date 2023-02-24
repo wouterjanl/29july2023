@@ -198,10 +198,19 @@ body {
     font-style: italic;
     margin: 0 0;
 } 
+
+.text.program-item {
+    text-transform: none;
+    font-style: none;
+    text-transform: uppercase;
+    margin: 0 0;
+}
+
 .text.program-location{
     text-transform: none;
     font-style: none;
     margin: 0 0;
+    font-size: 0.5rem;
 }
 
 
