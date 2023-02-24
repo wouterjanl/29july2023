@@ -257,7 +257,11 @@ figure {
     width: 30%;
     left: 0;
     right: 0;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+.contact-details {
+    margin: 2rem 0;
 }
 
 .text .optional br {
@@ -301,25 +305,6 @@ p.program-day {
 
 .text-big:not(:last-child) {
     margin-bottom: .5rem
-}
-
-.text a {
-    background: -webkit-linear-gradient(bottom, var(--c-text) 1px, transparent 1px);
-    background: linear-gradient(to top, var(--c-text) 1px, transparent 1px);
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-transition-property: color, background-size;
-    transition-property: color, background-size;
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    cursor: pointer;
-}
-
-.text a:hover {
-    background-size: 100% 100%
 }
 
 .lang-choices {
@@ -401,4 +386,8 @@ p.program-day {
 .text.program-title {
     margin: 0 0;
     font-size: 0.7rem;
+}
+
+a {
+    text-decoration: underline;
 }
