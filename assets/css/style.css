@@ -419,3 +419,23 @@ p.program-day {
 a {
     text-decoration: underline;
 }
+
+.respond-button {
+    text-transform: uppercase;
+    outline: 0;
+    background: hsl(0, 15%, 45%);
+    width: 70%;
+    margin: auto;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 0.6rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.respond-button:hover,
+.respond-button:active,
+.respond-button:focus {
+    background: hsl(0, 21%, 36%);
+}
