@@ -266,14 +266,14 @@ figure {
 }
 
 .small-boat-illustration {
-    width: 40%;
+    width: 18vh;
     left: 0;
     right: 0;
-    margin: 0 auto
+    margin: 0.2rem auto 0 auto;
 }
 
 .small-flower-illustration {
-    width: 30%;
+    width: 25%;
     left: 0;
     right: 0;
     margin: 0 auto
@@ -341,16 +341,12 @@ p.program-day {
     letter-spacing: 0.1em
 }
 
-.smaller {
-    font-size: calc(var(--font-size) * var(--font-scale-s));
-}
-
 .text-big:not(:last-child) {
     margin-bottom: .5rem
 }
 
 .less-padding {
-    padding: 0.1rem;
+    padding: 0.05rem;
 }
 
 
